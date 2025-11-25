@@ -1,6 +1,7 @@
 #Test para comprobar que find_best_station funciona correctamente#
 
 import Pytest 
+from SRC.greedy_serach import find_best_station, greedy_search
 
 if __name__ == "__main__":
 
