@@ -1,11 +1,7 @@
 #Test para comprobar que find_best_station funciona correctamente#
 
-import Pytest 
-
-if __name__ == "__main__":
-
-    from TESTS.Test_Greedy_Search import *
-
+import pytest
+from src.greedy_search import find_best_station, greedy_search
 
 
 def test_find_best_station():
