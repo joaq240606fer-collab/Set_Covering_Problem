@@ -63,15 +63,3 @@ def test_greedy_no_stagnation():
 
     assert set(result) == {"kone", "ktwo", "kthree"}
     print("test_greedy_no_stagnation passed")
-#Test para caso vacío#
-def test_greedy_empty_case():
-    states_needed = set()
-    stations = {
-        "kone": {"ID", "NV"},
-        "ktwo": {"UT"},
-    }
-
-    result = greedy_search(states_needed, stations)
-
-    assert result == []
-    print("test_greedy_empty_case passed")

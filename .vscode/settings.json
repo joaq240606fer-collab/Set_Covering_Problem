@@ -1,6 +1,8 @@
 {
     "conventionalCommits.scopes": [
         "Inyección de codigo",
-        "Solucion de bugs"
+        "Solucion de bugs",
+        "Actualizado de codigo ",
+        "Refactorixar codigo"
     ]
 }
