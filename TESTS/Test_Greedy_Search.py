@@ -69,6 +69,16 @@ def test_find_best_station_partial_best():
     }
     assert find_best_station(states_needed, stations) in {"a", "b"}
 
+# test devuelve estacion correcta cuando una estacion cubre todos los estados necesarios
+def test_find_best_station_empty_station_sets():
+    states_needed = {"ID", "NV"}
+    stations = {
+        "a": set(),
+        "b": {"ID"},
+    }
+    assert find_best_station(states_needed, stations) == "b"
+
+
 
 
 
