@@ -1,7 +1,6 @@
 {
     "conventionalCommits.scopes": [
         "Inyección de codigo",
-        "Refactorizar codigo ",
-        "Documentar codigo"
+        "Refactorizar codigo "
     ]
 }
