@@ -45,3 +45,13 @@ def test_find_best_station_single_partial_match():
     }
     assert find_best_station(states_needed, stations) == "a"
 
+# test devuelve None cuando states_needed esta vacio
+def test_find_best_station_empty_states_needed():
+    states_needed = set()
+    stations = {
+        "a": {"ID"},
+        "b": {"NV"},
+    }
+    assert find_best_station(states_needed, stations) is None
+
+
