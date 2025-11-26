@@ -59,5 +59,16 @@ def test_find_best_station_empty_stations():
     stations = {}
     assert find_best_station(states_needed, stations) is None
 
+# test devuelve estacion correcta cuando varias estaciones cubren parcialmente los estados necesarios
+def test_find_best_station_partial_best():
+    states_needed = {"ID", "NV", "UT", "CO"}
+    stations = {
+        "a": {"ID", "NV"},
+        "b": {"UT", "CO"},
+        "c": {"ID"},
+    }
+    assert find_best_station(states_needed, stations) in {"a", "b"}
+
+
 
 
