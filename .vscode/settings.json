@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "Inyección de codigo",
         "Refactorizar codigo ",
-        "Arreglar problema de mergeo"
+        "Arreglar problema de mergeo",
+        "Añadir documento de requerimientos"
     ]
 }
