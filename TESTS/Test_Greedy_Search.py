@@ -36,3 +36,12 @@ def test_find_best_station_tie():
     best = find_best_station(states_needed, stations)
     assert best in {"a", "b"}
 
+# test devuelve estacion correcta cuando solo una estacion cubre todos los estados necesarios
+def test_find_best_station_single_partial_match():
+    states_needed = {"TX", "NV"}
+    stations = {
+        "a": {"NV"},
+        "b": {"WA"},
+    }
+    assert find_best_station(states_needed, stations) == "a"
+
