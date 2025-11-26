@@ -53,5 +53,11 @@ def test_find_best_station_empty_states_needed():
         "b": {"NV"},
     }
     assert find_best_station(states_needed, stations) is None
+# test devuelve None cuando stations esta vacio
+def test_find_best_station_empty_stations():
+    states_needed = {"ID", "NV"}
+    stations = {}
+    assert find_best_station(states_needed, stations) is None
+
 
 
