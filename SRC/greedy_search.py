@@ -1,3 +1,4 @@
+print("Starting greedy search algorithm")
 states_needed = {
     "WA", "ID", "MT", "OR", "NV", "UT", "CA", "AZ", "NM", "TX", "OK",
     "KS", "CO", "NE", "SD", "WY", "ND", "IA", "MN", "MO", "AR", "LA"
@@ -30,3 +31,6 @@ def find_best_station (states_needed, stations):
             best_station = station
             states_covered = covered
     return best_station
+
+
+print("finally works correctly")
