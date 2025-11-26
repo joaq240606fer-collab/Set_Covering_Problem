@@ -25,3 +25,14 @@ def test_find_best_station_no_coverage():
         "b": {"NV"},
     }
     assert find_best_station(states_needed, stations) is None
+# test devuelve estacion correcta cuando hay empate en cobertura
+
+def test_find_best_station_tie():
+    states_needed = {"ID", "UT"}
+    stations = {
+        "a": {"ID", "UT"},
+        "b": {"ID", "UT"},
+    }
+    best = find_best_station(states_needed, stations)
+    assert best in {"a", "b"}
+
